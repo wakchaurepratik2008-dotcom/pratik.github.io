@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="profile animate__animated animate__fadeIn">
+                <div class="profile-img-container">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="profile-img">
+                    <span class="online-status"></span>
+                </div>
+                <h2>Alex Johnson</h2>
+                <p>Senior Developer</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            <ul class="nav-links">
+                <li class="nav-item active" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">About Me</span>
+                    <span class="tooltip">About Me</span>
+                </li>
+                <li class="nav-item" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="link-text">Education</span>
+                    <span class="tooltip">Education</span>
+                </li>
+                <li class="nav-item" data-section="family">
+                    <i class="fas fa-users"></i>
+                    <span class="link-text">Family</span>
+                    <span class="tooltip">Family</span>
+                </li>
+                <li class="nav-item" data-section="personal-info">
+                    <i class="fas fa-address-card"></i>
+                    <span class="link-text">Personal Info</span>
+                    <span class="tooltip">Personal Info</span>
+                </li>
+                <li class="nav-item" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span class="link-text">Skills</span>
+                    <span class="tooltip">Skills</span>
+                </li>
+                <li class="nav-item" data-section="projects">
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="link-text">Projects</span>
+                    <span class="tooltip">Projects</span>
+                </li>
+                <div class="indicator"></div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Me Section -->
+            <section id="about" class="section active">
+                <h2>About Me</h2>
+                <div class="card">
+                    <p>Hello! I'm a passionate web developer with expertise in modern web technologies. I love creating beautiful and functional websites that provide great user experiences.</p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="card">
+                    <h3>Bachelor's in Computer Science</h3>
+                    <p>University of Technology, 2018-2022</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
+                <div class="card">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Coding Academy, 2021</p>
+                </div>
+            </section>
+
+            <!-- Family Section -->
+            <section id="family" class="section">
+                <h2>Family</h2>
+                <div class="card">
+                    <p>Coming from a close-knit family of five, I value relationships and the support system they provide.</p>
+                </div>
+            </section>
+
+            <!-- Personal Info Section -->
+            <section id="personal-info" class="section">
+                <h2>Personal Information</h2>
+                <div class="card">
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p><strong>Birthday:</strong> January 1, 1995</p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-level">95%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-level">90%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">85%</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <div class="skill-level">80%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce platform built with React and Node.js</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app for managing daily tasks and projects</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
